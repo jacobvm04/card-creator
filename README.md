@@ -1,3 +1,3 @@
-# cardcreator
+# Card Creator
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/cardcreator)
+A tool to make cutting cards for all forms of debate an easier process.
