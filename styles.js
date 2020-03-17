@@ -75,15 +75,13 @@ export const MediumHeading = styled.h2`
 
 export const MediumButton = styled.button`
   ${boxShadow}
-  ${heading}
+  ${mediumText}
   border: 0;
   background: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 100%);
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 25px;
+  padding: 12px 16px;
   border-radius 0 0 10px 10px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.03em;
 
   &:hover {
     background: hsl(0, 0%, 50%);
