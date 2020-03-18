@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Card, MediumHeading } from './styles';
+import { Card, MediumHeading, MediumButton } from './styles';
 
 const CardBackground = styled(Card)`
   min-width: 400px;
@@ -13,11 +13,16 @@ const HeadingContainer = styled.div`
   display: flex
 `;
 
+const CopyButton = styled(MediumButton)`
+  margin-left: auto;
+`;
+
 export default function CardCard() {
   return (
     <CardBackground>
       <HeadingContainer>
         <MediumHeading>Card</MediumHeading>
+        <CopyButton>Copy</CopyButton>
       </HeadingContainer>
     </CardBackground>
   );

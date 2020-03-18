@@ -63,7 +63,6 @@ export const Card = styled.div`
   background: hsl(0, 0%, 100%);
   padding: none;
   margin: 25px;
-  display: flex;
 `;
 
 export const MediumHeading = styled.h2`
@@ -76,11 +75,13 @@ export const MediumHeading = styled.h2`
 export const MediumButton = styled.button`
   ${boxShadow}
   ${mediumText}
+  font-weight: 600;
   border: 0;
   background: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 100%);
-  padding: 12px 16px;
-  border-radius 0 0 10px 10px;
+  padding: 12px 25px;
+  margin: 12px 25px;
+  border-radius 10px;
   letter-spacing: 0.03em;
 
   &:hover {

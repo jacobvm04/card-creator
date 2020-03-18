@@ -12,6 +12,7 @@ const AttributesCardBackground = styled(Card)`
   width: 350px;
   padding-top: 2px;
   border-radius: 10px;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
 `;
