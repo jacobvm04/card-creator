@@ -4,6 +4,7 @@ import AttributesCard from './attributes-card';
 import styled from '@emotion/styled';
 import CardCard from './card-card';
 import { Provider } from 'react-redux';
+import store from './redux/store'
 
 import './style.css';
 
@@ -15,10 +16,12 @@ const AppContainer = styled.div`
 
 function App() {
   return (
-    <AppContainer>
-      <AttributesCard />
-      <CardCard />
-    </AppContainer>
+    <Provider store={store}>
+      <AppContainer>
+        <AttributesCard />
+        <CardCard />
+      </AppContainer>
+    </Provider>
   );
 }
 
