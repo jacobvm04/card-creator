@@ -4,6 +4,8 @@ import CardUrl from './card-url';
 import styled from '@emotion/styled';
 import CardCutButton from './card-cut-button';
 import { Card, MediumHeading } from './styles';
+import { connect } from 'react-redux';
+import { setURL, setAuthor, setDate, setTitle, setPublisher } from './redux/actions';
 import './style.css';
 
 const metascraper = require('metascraper')([require('metascraper-author')(), require('metascraper-date')(), require('metascraper-title')(), require('metascraper-publisher')(), require('./metascraper-article-body')()]);
@@ -17,10 +19,10 @@ const AttributesCardBackground = styled(Card)`
   justify-content: flex-start;
 `;
 
-export default function AttributesCard() {
+function AttributesCard({ setURL, setAuthor, setDate, setTitle, setPublisher }) {
   const [state, setState] = useState({});
 
-  function handleAttributeChange(attributeName, newValue) {0
+  function handleAttributeChange(attributeName, newValue) {
     setState({
       ...state,
       [attributeName]: newValue
@@ -47,3 +49,5 @@ export default function AttributesCard() {
       </AttributesCardBackground>
     );
 }
+
+export default connect(null, { setURL, setAuthor, setDate, setTitle, setPublisher })(AttributesCard);

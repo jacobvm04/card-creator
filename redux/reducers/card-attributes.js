@@ -1,48 +1,48 @@
-import { SET_URL, SET_AUTHOR, SET_DATE, SET_TITLE, SET_PUBLISHER } from './action-types';
+import { SET_URL, SET_AUTHOR, SET_DATE, SET_TITLE, SET_PUBLISHER } from '../action-types';
 
 const initialState = {
-  URL: "",
-  Author: "",
-  Date: "",
-  Title: "",
-  Publisher: ""
+  url: "",
+  author: "",
+  date: "",
+  title: "",
+  publisher: ""
 }
 
 export default function(state = initialState, action) {
   switch (action.type) {
     case SET_URL: {
-      const { URL } = action.payload;
+      const { url } = action.payload;
       return {
         ...state,
-        URL
+        url
       }
     }
     case SET_AUTHOR: {
-      const { Author } = action.payload;
+      const { author } = action.payload;
       return {
         ...state,
-        Author
+        author
       }
     }
     case SET_DATE: {
-      const { Date } = action.payload;
+      const { date } = action.payload;
       return {
         ...state,
-        Date
+        date
       }
     }
     case SET_TITLE: {
-      const { Title } = action.payload;
+      const { title } = action.payload;
       return {
         ...state,
-        Title
+        title
       }
     }
     case SET_PUBLISHER: {
-      const { Publisher } = action.payload;
+      const { publisher } = action.payload;
       return {
         ...state,
-        Publisher
+        publisher
       }
     }
     default:
