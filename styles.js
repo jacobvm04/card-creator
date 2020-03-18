@@ -57,6 +57,10 @@ export const titleHeading = css`
   font-weight: 650;
 `;
 
+export const debateText = css`
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+`;
+
 export const Card = styled.div`
   ${boxShadow}
   ${borderRadius}
@@ -116,4 +120,21 @@ export const TextInput = styled.input`
   padding-bottom: 8px;
   padding-left: 10px;
   border: 2px solid hsl(0,0%, 80%);
+`;
+
+export const ReferenceText = styled.p`
+  ${debateText}
+  font-size: 11px;
+`; 
+
+export const CiteText = styled.p`
+  ${debateText}
+  font-size: 14px;
+  font-weight: 700;
+`;
+
+export const TagText = styled.p`
+  ${debateText}
+  font-size: 16px;
+  font-weight: 700;
 `;
