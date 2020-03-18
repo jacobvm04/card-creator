@@ -4,7 +4,7 @@ const metascraper = require('metascraper')([require('metascraper-author')(), req
 module.exports = async (req, res) => {
   const { url } = req.query;
 
-  const res = await fetch(url);
+  const result = await fetch(url);
 
-  res.json(await metascraper({ html: await res.text(), url }));
+  res.json(await metascraper({ html: await result.text(), url }));
 }
