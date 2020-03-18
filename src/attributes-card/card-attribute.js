@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { TextInput, divider, smallHeading } from './styles';
+import { TextInput, divider, smallHeading } from '../styles';
 
 const AttributeInput = styled(TextInput)`
   width: 80%;

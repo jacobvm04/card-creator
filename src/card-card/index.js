@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Card, MediumHeading, MediumButton } from './styles';
+import { Card, MediumHeading, MediumButton } from '../styles';
 
 const CardBackground = styled(Card)`
   min-width: 400px;

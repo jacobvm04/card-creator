@@ -4,7 +4,7 @@ import AttributesCard from './attributes-card';
 import styled from '@emotion/styled';
 import CardCard from './card-card';
 import { Provider } from 'react-redux';
-import store from './redux/store'
+import store from './redux/store';
 
 import './style.css';
 
