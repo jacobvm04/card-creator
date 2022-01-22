@@ -12,7 +12,7 @@
     "metascraper-date": "^5.11.6",
     "metascraper-publisher": "^5.11.6",
     "metascraper-title": "^5.11.6",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-redux": "^7.2.0",
